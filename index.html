@@ -4,75 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Visualización de Modelos 3D Simplificados - Patrimonio Cultural</title>
+    <title>Visualización de Modelos 3D Simplificados de Patrimonio Cultural</title>
     
     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script>
     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente ligeramente mejorada */
+            margin: 0; /* Eliminar margen del body para control total */
             padding: 0;
-            background-color: #f4f4f4; /* Fondo suave */
+            background-color: #e8eaf6; /* Fondo suave y académico */
             color: #333;
         }
+        header {
+            background-color: #3f51b5; /* Azul oscuro para la cabecera */
+            color: white;
+            padding: 15px 40px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #ff9800; /* Línea de acento naranja */
+        }
+        header p {
+            margin: 5px 0;
+        }
         h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
+            color: #1a237e; /* Azul oscuro intenso */
+            border-bottom: 2px solid #5c6bc0;
             padding-bottom: 10px;
+            margin: 0 40px 20px 40px; /* Margen para centrar el contenido */
+        }
+        h2 {
+            color: #3949ab; /* Azul medio */
+        }
+        .content-wrapper {
+             padding: 0 40px; /* Envuelve el contenido principal para mantener márgenes */
         }
         .model-container {
             margin-bottom: 40px;
-            padding: 15px;
+            padding: 20px; /* Padding ligeramente aumentado */
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+            border-left: 5px solid #3f51b5; /* Borde de énfasis */
         }
         x3d {
-            display: block; /* Asegura el correcto dimensionamiento */
-            margin: 15px auto; /* Centra el visor 3D */
+            display: block;
+            margin: 20px auto; /* Centra el visor 3D */
             border: 1px solid #ccc;
             border-radius: 4px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px 40px;
+            background-color: #cfd8dc; /* Gris claro para el footer */
+            border-top: 2px solid #90a4ae;
+        }
+        /* Nuevo estilo para la afiliación */
+        .academic-affiliation {
+            text-align: right;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px dashed #aaa;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <p><strong>Curso:</strong> Tecnologías aplicadas al Patrimonio Cultural (UNED, 5ª edición)</p>
-        <p><strong>Módulo 2:</strong> Digitalización del Patrimonio Cultural</p>
         <p><strong>Práctica Tema 5:</strong> Publicación y Difusión</p>
     </header>
-    <hr>
-    <h1>🔬 Probando la Simplificación de Modelos 3D de Patrimonio</h1>
 
-    <div class="model-container">
-        <h2>Modelo A: Simplificado a 10.000 Caras</h2>
-        <p>
-            Representación simplificada a **10.000 caras** (proveniente de una nube de puntos original de **191.622 vértices**).
-        </p>
-        <x3d width='800px' height='500px'>
-            <scene>
-                <Viewpoint 
-                    position="22.34375 0.16776 4.12506" 
-                    orientation="1.00000 0.00000 0.00000 0.00785"
-                    zNear="4.34647" 
-                    zFar="17.98292" 
-                    centerOfRotation="0.00000 0.00000 0.00000" 
-                    fieldOfView="0.78540" 
-                    description="Vista Inicial"
-                ></Viewpoint>
-                <inline url="https://raw.githubusercontent.com/lhquiros1/Testeando/refs/heads/main/ReliefQueen10k.x3d"> </inline>
-            </scene>
-        </x3d>
-        <p>
-            Este modelo está optimizado para la publicación web, utilizando el formato estándar X3D para visores interactivos.
-        </p>
-    </div>
+    <div class="content-wrapper">
+        <h1>🔬 Probando la Simplificación de Modelos 3D de Patrimonio</h1>
 
-    <hr>
-    <footer>
+        <div class="model-container">
+            <h2>Modelo A: Simplificado a 10.000 Caras</h2>
+            <p>
+                Representación simplificada a **10.000 caras** (proveniente de una nube de puntos original de **191.622 vértices**).
+            </p>
+            <x3d width='800px' height='500px'>
+                <scene>
+                    <Viewpoint 
+                        position="22.34375 0.16776 4.12506" 
+                        orientation="1.00000 0.00000 0.00000 0.00785"
+                        zNear="4.34647" 
+                        zFar="17.98292" 
+                        centerOfRotation="0.00000 0.00000 0.00000" 
+                        fieldOfView="0.78540" 
+                        description="Vista Inicial"
+                    ></Viewpoint>
+                    <inline url="https://raw.githubusercontent.com/lhquiros1/Testeando/refs/heads/main/ReliefQueen10k.x3d"> </inline>
+                </scene>
+            </x3d>
+            <p>
+                Este modelo está optimizado para la publicación web, utilizando el formato estándar X3D para visores interactivos. 
+                **Tip de navegación:** Pulsa la tecla **'A'** para centrar rápidamente la imagen y volver al punto de vista inicial definido.
+            </p>
+        </div>
+        
+        <div class="academic-affiliation">
+            <p><strong>Contexto Académico:</strong></p>
+            <p>Curso: Tecnologías aplicadas al Patrimonio Cultural (UNED, 5ª edición)</p>
+            <p>Módulo 2: Digitalización del Patrimonio Cultural</p>
+        </div>
+        </div> <footer>
         <h3>Fuente y Licencia de la Nube de Puntos Original</h3>
         <p>
             El modelo original **"Burney relief/ Queen of the Night (Draft)"** (<a href="https://skfb.ly/6qE8Q" target="_blank" rel="noopener noreferrer">https://skfb.ly/6qE8Q</a>) 
