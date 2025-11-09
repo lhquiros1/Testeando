@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='X-UA-Compatible' content='ie=edge'> <title>Visualización de Modelos 3D Simplificados - Patrimonio Cultural</title> <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Visualización de Modelos 3D Simplificados - Patrimonio Cultural</title>
+    
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script>
     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
 
     <style>
@@ -35,46 +38,39 @@
     </style>
 </head>
 <body>
-<h1>🔬 Probando la Simplificación de Modelos 3D de Patrimonio</h1>
+
+    <h1>🔬 Probando la Simplificación de Modelos 3D de Patrimonio</h1>
 
     <div class="model-container">
         <h2>Modelo A: Simplificado a 10.000 Caras</h2>
         <p>
-            Representación simplificada a 10.000 caras (proveniente de una nube de puntos original de más de 2.964.845 vértices).
-        </p>
-        <x3d width='800px' height='500px'> <scene>
-
-            <Viewpoint position="-21.11674 -10.84256 -6.87733" orientation="0.96170 0.13780 0.23694 1.65739" 
-	zNear="4.34647" zFar="17.98292" centerOfRotation="-24.97677 -1.58875 -6.62162" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint>
-            <inline url="https://raw.githubusercontent.com/lhquiros1/Testeando/refs/heads/main/Simplificado%20Textura%2010K.x3d"> </inline>
-            </scene>
-        </x3d>
-        <p>
-            Este modelo representa el objetivo final de la práctica, optimizado para la publicación web.
-        </p>
-    </div>
-
-    <div class="model-container">
-        <h2>Modelo B: Simplificado a 18.000 Caras (Comparativa)</h2>
-        <p>
-            Modelo simplificado a 18.000 caras, usado como comparativa de calidad visual vs. tamaño de archivo.
+            Representación simplificada a **10.000 caras** (proveniente de una nube de puntos original de **191.622 vértices**).
         </p>
         <x3d width='800px' height='500px'>
             <scene>
-                <Viewpoint position="-21.11674 -10.84256 -6.87733" orientation="0.96170 0.13780 0.23694 1.65739" 
-	zNear="4.34647" zFar="17.98292" centerOfRotation="-24.97677 -1.58875 -6.62162" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint>
-                <inline url="https://raw.githubusercontent.com/lhquiros1/Testeando/refs/heads/main/Simplificado%20Textura%2018K.x3d"> </inline>
+                <Viewpoint 
+                    position="-21.11674 -10.84256 -6.87733" 
+                    orientation="0.96170 0.13780 0.23694 1.65739"
+                    zNear="4.34647" 
+                    zFar="17.98292" 
+                    centerOfRotation="-24.97677 -1.58875 -6.62162" 
+                    fieldOfView="0.78540" 
+                    description="Vista Inicial"
+                ></Viewpoint>
+                <inline url="https://raw.githubusercontent.com/lhquiros1/Testeando/refs/heads/main/ReliefQueen10k.x3d"> </inline>
             </scene>
         </x3d>
         <p>
-            Aunque visualmente similar, este modelo requiere un mayor tiempo de carga en comparación con el de 10K caras.
+            Este modelo está optimizado para la publicación web, utilizando el formato estándar X3D para visores interactivos.
         </p>
     </div>
 
-    <hr> <footer>
-        <h3>Fuente de la Nube de Puntos Original</h3>
+    <hr>
+    <footer>
+        <h3>Fuente y Licencia de la Nube de Puntos Original</h3>
         <p>
-            El modelo original es: "<a href="https://skfb.ly/oQVQC" target="_blank" rel="noopener noreferrer">Akadimia Athinon | National Arch. Museum Athens</a>" por Arqueomodel3D, licenciado bajo Creative Commons Attribution (<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>).
+            El modelo original **"Burney relief/ Queen of the Night (Draft)"** (<a href="https://skfb.ly/6qE8Q" target="_blank" rel="noopener noreferrer">https://skfb.ly/6qE8Q</a>) 
+            proviene de **The British Museum** y está licenciado bajo **Creative Commons Attribution-NonCommercial** (<a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>).
         </p>
     </footer>
 
